@@ -1,0 +1,21 @@
+
+
+.example__title {
+  font-weight: inherit;
+  font-size: 36px;
+  line-height: 40px;
+}
+
+.example__description {
+  font-family: $secondary-font;
+  font-size: 14px;
+  line-height: 18px;
+  color: $secondary-color-text;
+}
+
+.example__price {
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+}

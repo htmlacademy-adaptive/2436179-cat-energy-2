@@ -1,0 +1,17 @@
+.hero {
+  color: $bg-primary-color-text;
+  background-color: $bg-primary-color;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.hero__title {
+  font-weight: inherit;
+  font-size: 36px;
+  line-height: 36px;
+}
+
+.hero__subtitle {
+  font-size: 14px;
+  line-height: 14px;
+}

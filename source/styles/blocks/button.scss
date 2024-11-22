@@ -1,0 +1,13 @@
+.button {
+  line-height: 20px;
+  color: $bg-primary-color-text;
+  background-color: $bg-primary-color;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.button--to-all {
+  color: $secondary-color-text;
+  background-color: $bg-secondary-color;
+}

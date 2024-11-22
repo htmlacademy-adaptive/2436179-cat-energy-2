@@ -24,7 +24,7 @@
       </picture>
     </a>
     <nav class="main-navigation">
-      <button class="main-navigation_toggle" type="button">
+      <button class="main-navigation_toggle main-navigation_toggle--open" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
       <ul class="main-navigation__list">
@@ -47,8 +47,8 @@
         <h1 class="hero__title">Функциональное питание для котов</h1>
         <p class="hero__subtitle">Занялся собой? Займись котом!</p>
         <picture>
-          <source width="552" height="499" type="image/png" media="(min-width: 1440px)" srcset="images/hero-image-desktop@1x.png, images/hero-image-desktop@2x.png 2x">
-          <source width="709" height="609" type="image/png" media="(min-width: 768px)" srcset="images/hero-image-tablet@1x.png, images/hero-image-tablet@2x.png 2x">
+          <source width="552" height="499" type="image/png" media="(min-width: 1440px)" srcset="images/hero-image-desktop@1x.png 1x, images/hero-image-desktop@2x.png 2x">
+          <source width="709" height="609" type="image/png" media="(min-width: 768px)" srcset="images/hero-image-tablet@1x.png 1x, images/hero-image-tablet@2x.png 2x">
           <img class="hero__image-mobile" src="images/hero-image-mobile@1x.png" srcset="images/hero-image-mobile@2x.png 2x" width="280" height="270" alt="Питание для котов со вкуcом курицы">
         </picture>
         <a class="hero__button button" href="modal.html">Подобрать программу</a>
@@ -56,21 +56,19 @@
     </section>
 
     <section class="programs">
-      <div class="programs__wrapper">
-        <h2 class="visually-hidden">Выбор программы</h2>
-        <ul class="programs__list">
-          <li class="programs__item programs__item--slim">
-            <h3 class="programs__title">Похудение</h3>
-            <p class="programs__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-            <a class="programs__link" href="catalog.html">Каталог slim</a>
-          </li>
-          <li class="programs__item programs__item--pro">
-            <h3 class="programs__title">Набор массы</h3>
-            <p class="programs__description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
-            <a class="programs__link" href="catalog.html">Каталог pro</a>
-          </li>
-        </ul>
-      </div>
+      <h2 class="visually-hidden">Выбор программы</h2>
+      <ul class="programs__list">
+        <li class="programs__item programs__item--slim">
+          <h3 class="programs__title">Похудение</h3>
+          <p class="programs__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
+          <a class="programs__link" href="catalog.html">Каталог slim</a>
+        </li>
+        <li class="programs__item programs__item--pro">
+          <h3 class="programs__title">Набор массы</h3>
+          <p class="programs__description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
+          <a class="programs__link" href="catalog.html">Каталог pro</a>
+        </li>
+      </ul>
     </section>
 
     <section class="description">
@@ -102,26 +100,23 @@
         <h2 class="example__title">Живой пример</h2>
         <p class="example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
         <div class="example__list">
-          <dl class="example__item">
-            <dt class="example__item-title">5 КГ</dt>
-            <dd class="example__item-subtitle">cнижение веса</dd>
+          <dl class="example__item relation">
+            <dt class="relation__title">5 КГ</dt>
+            <dd class="relation__subtitle">cнижение веса</dd>
           </dl>
-          <dl class="example__item">
-            <dt class="example__item-title">60 ДНЕЙ</dt>
-            <dd class="example__item-subtitle">затрачено времени</dd>
+          <dl class="example__item relation">
+            <dt class="relation__title">60 ДНЕЙ</dt>
+            <dd class="relation__subtitle">затрачено времени</dd>
           </dl>
         </div>
-        <div class="example__price">
-          <p class="example__price-title">Затраты на питание:</p>
-          <span class="example__price-figure">15 000 РУБ.</span>
-        </div>
+        <p class="example__price">Затраты на питание: <span>15 000 РУБ.</span></p>
         <div class="example__slider">
           <picture>
-            <source width="560" height="512" type="image/jpeg" media="(min-width: 768px)" srcset="images/cat-before-tablet@1x.jpg, images/cat-before-tablet@2x.jpg 2x">
+            <source width="560" height="512" type="image/jpeg" media="(min-width: 768px)" srcset="images/cat-before-tablet@1x.jpg 1x, images/cat-before-tablet@2x.jpg 2x">
             <img src="images/cat-before-mobile@1x.jpg" srcset="images/cat-before-mobile@2x.jpg 2x" width="280" height="256" alt="Толстый кот">
           </picture>
           <picture>
-            <source width="560" height="512" type="image/jpeg" media="(min-width: 768px)" srcset="images/cat-after-tablet@1x.jpg, images/cat-after-tablet@2x.jpg 2x">
+            <source width="560" height="512" type="image/jpeg" media="(min-width: 768px)" srcset="images/cat-after-tablet@1x.jpg 1x, images/cat-after-tablet@2x.jpg 2x">
             <img src="images/cat-after-mobile@1x.jpg" srcset="images/cat-after-mobile@2x.jpg 2x" width="280" height="256" alt="Худой кот">
           </picture>
           <button class="example__slider-control" type="button">
@@ -134,11 +129,11 @@
     <section class="map">
       <div class="coop-dealer">
         <h2 class="coop-dealer__title">Приглашаем к сотрудничеству дилеров!</h2>
-        <address class="coop-dealer__address">
-          <p class="coop-dealer__address-street">ул. Большая Конюшенная, д. 19/8 <span>Санкт-Петербург</span></p>
+        <address class="coop-dealer__address address">
+          <p class="address__street">ул. Большая Конюшенная, д. 19/8 <span>Санкт-Петербург</span></p>
         </address>
       </div>
-      <img src="images/map-pins/map-mobile.png" width="320" height="362" alt="Где нас найти">
+      <img src="images/" width="320" height="362" alt="Где нас найти">
     </section>
   </main>
 
@@ -166,11 +161,9 @@
           </li>
         </ul>
       </div>
-      <div class="copyright">
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-          <span>HTML Academy</span>
-        </a>
-      </div>
+      <a class="copyright" href="https://htmlacademy.ru/intensive/adaptive">
+        <span>HTML Academy</span>
+      </a>
     </div>
   </footer>
 </body>

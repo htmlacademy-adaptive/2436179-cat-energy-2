@@ -1,0 +1,11 @@
+
+.gift__title::before {
+  content: "";
+  display: block;
+  width: 78px;
+  height: 80px;
+  background-image: url("../../icons/stack.svg#gift-icon");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 78px 80px;
+}

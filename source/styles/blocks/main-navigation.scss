@@ -9,3 +9,18 @@
   text-decoration: none;
   text-transform: uppercase;
 }
+
+.main-navigation_toggle {
+  width: 24px;
+  height: 24px;
+  background-color: #ffffff;
+  background-image: url("../../icons/stack.svg#burger-menu");
+  background-repeat: no-repeat;
+  background-size: 24px 24px;
+  border: none;
+  cursor: pointer;
+}
+
+.main-navigation_toggle--close {
+  background-image: url("../../icons/stack.svg#menu-close");
+}

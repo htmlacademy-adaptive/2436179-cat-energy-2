@@ -1,3 +1,15 @@
 .main-footer {
   background-color: $bg-secondary-color;
 }
+
+.main-footer__logo {
+  cursor: pointer;
+}
+
+.main-footer__logo:hover {
+  opacity: 0.9;
+}
+
+.main-footer__logo:active {
+  opacity: 0.7;
+}

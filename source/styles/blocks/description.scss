@@ -1,5 +1,3 @@
-
-
 .description__title {
   font-weight: inherit;
   font-size: 36px;
@@ -12,4 +10,39 @@
   font-size: 14px;
   line-height: 18px;
   color: $secondary-color-text;
+}
+
+.description__item::before {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 60px;
+  background-color: $bg-primary-color;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 30px 32px;
+}
+
+.description__item--leaf::before {
+  content: "";
+  display: block;
+  background-image: url("../../icons/stack.svg#leaf-icon");
+}
+
+.description__item--powder::before {
+  content: "";
+  display: block;
+  background-image: url("../../icons/stack.svg#powder-icon");
+}
+
+.description__item--eat::before {
+  content: "";
+  display: block;
+  background-image: url("../../icons/stack.svg#eat-icon");
+}
+
+.description__item--weigher::before {
+  content: "";
+  display: block;
+  background-image: url("../../icons/stack.svg#weigher-icon");
 }

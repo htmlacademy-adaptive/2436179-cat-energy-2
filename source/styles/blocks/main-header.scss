@@ -1,0 +1,12 @@
+.main-header__logo {
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.main-header__logo:hover {
+  opacity: 0.7;
+}
+
+.main-header__logo:active {
+  opacity: 0.5;
+}

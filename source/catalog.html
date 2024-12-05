@@ -11,15 +11,15 @@
 
 <body class="page__body">
   <header class="main-header">
-    <a class="main-header__logo-mobile" href="index.html">
+    <a class="main-header__logo" href="index.html">
       <picture>
         <source width="202" height="59" type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo-desktop.svg">
         <source width="174" height="50" type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo-tablet.svg">
-        <img class="main-header__logo-image" src="images/logo-mobile-image.svg" width="190" height="38" alt="Кэт энерджи">
+        <img src="images/logo-mobile-image.svg" width="190" height="38" alt="Кэт энерджи">
       </picture>
     </a>
     <nav class="main-navigation">
-      <button class="main-navigation_toggle" type="button">
+      <button class="main-navigation_toggle main-navigation_toggle--close" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
       <div class="main-navigation__wrapper">
@@ -192,11 +192,11 @@
             <a class="card__link card__link--plus" href="#">
               <span class="visually-hidden">Посмотреть все товары</span>
             </a>
-            <div class="card__content">
+            <div class="card__content card__content--more">
               <h3 class="card__title">Показать еще 100500 товаров</h3>
               <p class="card__subtitle">На самом деле вкусов гораздо больше!</p>
+              <a class="card__button button button--to-all" href="new-product.html">Показать все</a>
             </div>
-            <a class="card__button button button--to-all" href="new-product.html">Показать все</a>
           </li>
         </ul>
       </div>
@@ -238,7 +238,7 @@
           <a class="extra-card__button button" href="order.html">Заказать</a>
         </li>
       </ul>
-      <div class="gift gift-container">
+      <div class="gift">
         <p class="gift__title">Закажите все и получите чехол для кота в подарок!</p>
       </div>
     </section>

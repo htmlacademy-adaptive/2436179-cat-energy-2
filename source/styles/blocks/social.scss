@@ -1,5 +1,38 @@
+.social__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
 
 .social__link {
+  display: block;
   color: inherit;
+  width: 28px;
+  height: 22px;
+  background-color: #666666;
+  mask-repeat: no-repeat;
+  mask-position: center;
+  mask-size: 28px 22px;
   text-decoration: none;
+  transition: all 0.5s;
+}
+
+.social__link--vk {
+  mask-image: url("../../icons/stack.svg#vkontakte");
+}
+
+.social__link--youtube {
+  mask-image: url("../../icons/stack.svg#youtube");
+}
+
+.social__link--telegram {
+  mask-image: url("../../icons/stack.svg#telegram");
+}
+
+.social__link:hover {
+  background-color: $bg-primary-color;
+}
+
+.social__link:active {
+  opacity: 0.5;
 }

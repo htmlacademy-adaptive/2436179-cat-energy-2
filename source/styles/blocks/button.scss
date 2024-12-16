@@ -1,4 +1,6 @@
 .button {
+  display: inline-block;
+  box-sizing: border-box;
   line-height: 20px;
   color: $bg-primary-color-text;
   background-color: $bg-primary-color;
@@ -8,6 +10,15 @@
 }
 
 .button--to-all {
+  padding: 10px 95px;
   color: $secondary-color-text;
   background-color: $bg-secondary-color;
+
+  @media (min-width: $tablet-width) {
+    padding: 10px 80px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 10px 39px;
+  }
 }

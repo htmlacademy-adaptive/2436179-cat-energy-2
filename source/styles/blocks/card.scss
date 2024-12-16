@@ -1,3 +1,9 @@
+.card__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
 .card__title {
   font-weight: inherit;
   line-height: 20px;
@@ -12,22 +18,22 @@
   color: $secondary-color-text;
 }
 
-.card__content--more {
-  position: relative;
+.card__button {
+  padding: 10px 109px;
 }
 
-.card__content--more::before,
-.card__content--more::after {
-  content: "";
-  position: absolute;
-  display: block;
-  width: 30px;
-  height: 2px;
-  top: 0;
-  left: 0;
-  background-color: #d3d3d3;
+@media (min-width: $tablet-width) {
+  .card__content {
+    flex-direction: column;
+  }
+
+  .card__button {
+    padding: 10px 94px;
+  }
 }
 
-.card__content--more::after {
-  transform: rotate(90deg);
+@media (min-width: $tablet-width) {
+  .card__button {
+    padding: 10px 53px;
+  }
 }

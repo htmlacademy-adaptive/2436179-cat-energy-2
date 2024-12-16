@@ -1,8 +1,27 @@
 
 .extra-card__title {
+  margin: 0;
+  padding: 0;
   font-weight: inherit;
   font-size: 16px;
   line-height: 16px;
   color: #222222;
   text-transform: uppercase;
+}
+
+.extra-card__button {
+  padding: 10px 109px;
+}
+
+
+@media (min-width: $tablet-width) {
+  .extra-card__button {
+    padding: 10px 285px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .extra-card__button {
+    padding: 10px 91px;
+  }
 }

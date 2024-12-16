@@ -1,9 +1,55 @@
+.subscription__wrapper {
+  width: 280px;
+  padding: 40px 20px;
+  margin: auto;
+}
 
 .subscription__title {
+  margin: 0;
+  padding: 0;
   font-weight: inherit;
   font-size: 24px;
 }
 
 .subscription__description {
+  margin: 0;
+  padding: 0;
   font-size: 16px;
+}
+
+.subscription__button {
+  margin-top: 31px;
+  padding: 15px 81px;
+  font-family: $primary-font;
+  font-size: 20px;
+  line-height: 26px;
+  border: none;
+}
+
+@media (min-width: $tablet-width) {
+  .subscription__wrapper {
+    width: 632px;
+    padding: 80px 68px;
+  }
+
+  .subscription__button {
+    margin-top: 0;
+    padding: 15px 69px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .subscription__wrapper {
+    width: 1220px;
+    padding: 96px 110px 104px;
+  }
+
+  .subscription__description {
+    padding: 72px 40px 24px;
+    text-align: center;
+  }
+
+  .subscription__form {
+    text-align: center;
+  }
 }

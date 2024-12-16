@@ -1,8 +1,24 @@
+.programs__wrapper {
+  width: 280px;
+  padding: 20px;
+  margin: auto;
+}
+
+.programs__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
 .programs__item {
   position: relative;
   list-style: none;
-  padding-left: 100px;
+  padding: 30px 33px 18px 20px;
   background-color: $bg-secondary-color;
+}
+
+.programs__item:not(:last-child) {
+  margin-bottom: 20px;
 }
 
 .programs__item::before {
@@ -11,8 +27,8 @@
   display: block;
   width: 50px;
   height: 50px;
-  top: 0;
-  left: 0;
+  top: 21px;
+  left: 20px;
   border-radius: 50%;
   background-color: $bg-primary-color;
 }
@@ -23,8 +39,8 @@
   display: block;
   width: 36px;
   height: 50px;
-  top: -3px;
-  left: 7px;
+  top: 21px;
+  left: 27px;
   background-image: url("../../icons/stack.svg#cat-slim");
   background-repeat: no-repeat;
   background-size: 36px 50px;
@@ -36,16 +52,19 @@
   display: block;
   width: 67px;
   height: 50px;
-  top: 0;
-  left: -8px;
+  top: 21px;
+  left: 12px;
   background-image: url("../../icons/stack.svg#cat-pro");
   background-repeat: no-repeat;
   background-size: 67px 50px;
 }
 
 .programs__title {
+  margin: 0;
+  padding: 0;
   font-size: 24px;
   line-height: 37px;
+  text-align: center;
   text-transform: uppercase;
 }
 
@@ -82,4 +101,94 @@
 
 .programs__link:active {
   opacity: 0.5;
+}
+
+@media (min-width: $tablet-width) {
+  .programs__wrapper {
+    width: 708px;
+    padding: 0 30px 45px;
+  }
+
+  .programs__item {
+    padding: 77px 316px 53px 52px;
+  }
+
+  .programs__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+
+  .programs__item::before {
+    width: 200px;
+    height: 200px;
+    top: 55px;
+    left: 445px;
+  }
+
+  .programs__item--slim::after {
+    width: 140px;
+    height: 194px;
+    top: 43px;
+    left: 472px;
+    background-size: 140px 194px;
+  }
+
+  .programs__item--pro::after {
+    width: 268px;
+    height: 112px;
+    top: 105px;
+    left: 410px;
+    background-size: 268px 112px;
+  }
+
+  .programs__title {
+    text-align-last: left;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .programs__wrapper {
+    width: 1220px;
+    padding: 82px 110px 71px;
+  }
+
+  .programs__list {
+    display: flex;
+    flex-direction: row;
+    gap: 80px;
+  }
+
+  .programs__item {
+    padding: 77px 61px 55px 52px;
+  }
+
+  .programs__item:not(:last-child) {
+    margin-bottom: 0;
+  }
+
+  .programs__item::before {
+    width: 100px;
+    height: 100px;
+    top: 41px;
+    left: 52px;
+  }
+
+  .programs__item--slim::after {
+    width: 70px;
+    height: 97px;
+    top: 40px;
+    left: 70px;
+    background-size: 70px 97px;
+  }
+
+  .programs__item--pro::after {
+    width: 134px;
+    height: 56px;
+    top: 65px;
+    left: 37px;
+    background-size: 134px 56px;
+  }
+
+  .programs__title {
+    text-align-last: center;
+  }
 }

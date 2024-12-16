@@ -2,6 +2,15 @@
   background-color: $bg-secondary-color;
 }
 
+.main-footer__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 240px;
+  padding: 40px 20px;
+  margin: auto;
+}
+
 .main-footer__logo {
   cursor: pointer;
 }
@@ -12,4 +21,20 @@
 
 .main-footer__logo:active {
   opacity: 0.7;
+}
+
+@media (min-width: $tablet-width) {
+  .main-footer__wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 708px;
+    padding: 55px 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-footer__wrapper {
+    width: 1220px;
+    padding: 66px 110px;
+  }
 }

@@ -6,21 +6,24 @@
 
 /* BLOCKS */
 @import "./blocks/visually-hidden.scss";
-@import "./blocks/main-header.scss";
+@import "./blocks/page.scss";
+@import "./blocks/main-container.scss";
 @import "./blocks/button.scss";
-@import "./blocks/main-navigation.scss";
+@import "./blocks/main-header.scss";
+@import "./blocks/navigation.scss";
 @import "./blocks/hero.scss";
 @import "./blocks/programs.scss";
 @import "./blocks/description.scss";
 @import "./blocks/example.scss";
 @import "./blocks/relation.scss";
 @import "./blocks/slider.scss";
+@import "./blocks/map.scss";
 @import "./blocks/coop-dealer.scss";
 @import "./blocks/address.scss";
-@import "./blocks/copyright.scss";
-@import "./blocks/social.scss";
 @import "./blocks/main-footer.scss";
-@import "./blocks/catalog-container.scss";
+@import "./blocks/social.scss";
+@import "./blocks/copyright.scss";
+@import "./blocks/catalog.scss";
 @import "./blocks/card.scss";
 @import "./blocks/compound.scss";
 @import "./blocks/catalog-extra.scss";

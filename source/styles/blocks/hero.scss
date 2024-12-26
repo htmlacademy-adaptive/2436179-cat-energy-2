@@ -5,33 +5,41 @@
 
 .hero__wrapper {
   position: relative;
-  width: 320px;
+  min-width: 320px;
   min-height: 480px;
-  margin: auto;
 }
 
 .hero__wrapper picture {
   position: absolute;
   top: 167px;
-  left: 20px;
+  left: 6%;
+  right: 6%;
+}
+
+.hero__wrapper img {
+  display: inline;
 }
 
 .hero__headline {
-  width: 250px;
+  min-width: 250px;
   min-height: 302px;
-  padding: 27px 35px 0;
   background-color: $bg-primary-color;
+  background-image: url("../../images/background-image-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .hero__title {
   margin: 0;
-  padding: 0;
+  padding: 27px 35px 25px;
   font-weight: inherit;
   font-size: 36px;
   line-height: 36px;
 }
 
 .hero__subtitle {
+  margin: 0;
+  padding: 0;
   font-size: 14px;
   line-height: 14px;
   text-transform: uppercase;
@@ -40,7 +48,8 @@
 .hero__button {
   position: absolute;
   top: 440px;
-  left: 20px;
+  left: 6%;
+  right: 6%;
   padding: 10px 63px;
   font-size: 16px;
   line-height: 20px;
@@ -58,34 +67,36 @@
   }
 
   .hero__wrapper picture {
+    width: 709px;
+    height: 609px;
     top: 266px;
     left: 30px;
   }
 
   .hero__headline {
-    width: 416px;
-    min-height: 302px;
-    padding: 65px 234px 0 120px;
     background-color: #ffffff;
+    background-image: none;
   }
 
   .hero__title {
+    padding: 65px 71px 40px 120px;
     font-size: 60px;
     line-height: 60px;
     text-align: left;
   }
 
   .hero__subtitle {
+    padding-left: 120px;
     font-size: 20px;
     line-height: 20px;
     text-align: left;
   }
 
   .hero__button {
-    position: absolute;
-    top: 250px;
-    left: 120px;
-    padding: 10px 63px;
+    top: 295px;
+    left: 16%;
+    right: 53%;
+    padding: 14px 24px;
     font-size: 20px;
     line-height: 26px;
     z-index: 1;
@@ -109,9 +120,14 @@
     top: -114px;
     right: 0;
     background-color: $bg-primary-color;
+    background-image: url("../../images/background-image-desktop@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
   }
 
   .hero__wrapper picture {
+    width: 552px;
+    height: 499px;
     top: 29px;
     left: 557px;
     z-index: 1;
@@ -122,9 +138,19 @@
     padding: 110px 234px 0 190px;
   }
 
+  .hero__title {
+    padding: 0;
+  }
+
+  .hero__subtitle {
+    padding-top: 40px;
+    padding-left: 0;
+  }
+
   .hero__button {
     top: 342px;
     left: 190px;
+    right: 70%;
     padding: 14px 24px;
   }
 }

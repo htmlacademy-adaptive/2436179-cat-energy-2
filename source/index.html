@@ -17,7 +17,7 @@
 
   <header class="main-header">
     <div class="main-header__wrapper">
-      <nav class="main-header__navigation navigation">
+      <nav class="main-header__navigation navigation navigation--open">
         <a class="main-header__logo" href="index.html">
           <picture>
             <source width="202" height="59" type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo-desktop.svg">
@@ -25,11 +25,11 @@
             <img src="images/logo-mobile-image.svg" width="190" height="38" alt="Кэт энерджи">
           </picture>
         </a>
-        <button class="navigation_toggle navigation_toggle--close" type="button" aria-label="Закрыть меню">
+        <button class="navigation__toggle" type="button" aria-label="Закрыть меню">
           <span class="visually-hidden">Открыть меню</span>
         </button>
         <ul class="navigation__list">
-          <li class="navigation__item navigation__item--current">
+          <li class="navigation__item navigation__item--current navigation__item--current-index">
             <a class="navigation__link" href="index.html">Главная</a>
           </li>
           <li class="navigation__item">
@@ -94,7 +94,7 @@
             <span class="description__number">3</span>
           </li>
           <li class="description__item  description__item--weigher">
-            <p class="description__subtitle">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
+            <p class="description__subtitle">Уже через месяц наслаждайтесь изменениями к лучшему <br> вашего питомца!</p>
             <span class="description__number">4</span>
           </li>
         </ul>
@@ -138,12 +138,14 @@
       <div class="map__wrapper">
         <div class="coop-dealer">
           <div class="coop-dealer__wrapper">
-            <h2 class="coop-dealer__title">Приглашаем к сотрудничеству дилеров!</h2>
+            <h2 class="coop-dealer__title">Приглашаем к&nbsp;сотрудничеству дилеров!</h2>
             <address class="coop-dealer__address address">
               <p class="address__street">ул. Большая Конюшенная, д. 19/8 <span>Санкт-Петербург</span></p>
             </address>
           </div>
         </div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4782.783150489443!2d30.320978107784327!3d59.93930258872576!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sid!4v1735191082630!5m2!1sru!2sid" width="320" height="362" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
         <picture>
           <source width="1440" height="400" type="image/png" media="(min-width: 1440px)" srcset="images/map-desktop@1x.png 1x, images/map-desktop@2x.png 2x">
           <source width="768" height="400" type="image/png" media="(min-width: 768px)" srcset="images/map-tablet@1x.png 1x, images/map-tablet@2x.png 2x">

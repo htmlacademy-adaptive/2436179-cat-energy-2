@@ -1,14 +1,34 @@
-
 .relation__title {
+  margin-bottom: 8px;
   font-size: 24px;
   line-height: 24px;
   text-align: center;
 }
 
 .relation__subtitle {
+  margin: 0;
   font-family: $secondary-font;
   font-size: 12px;
   line-height: 12px;
   color: $secondary-color-text;
   text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .relation__title {
+    margin-bottom: 11px;
+    font-size: 30px;
+    line-height: 37px;
+  }
+
+  .relation__subtitle {
+    font-size: 14px;
+    line-height: 14px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .relation__title {
+    margin-bottom: 9px;
+  }
 }

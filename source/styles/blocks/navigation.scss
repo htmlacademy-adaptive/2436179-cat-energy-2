@@ -1,3 +1,7 @@
+.navigation {
+  position: relative;
+}
+
 .navigation__list {
   margin: 0;
   padding: 0;
@@ -5,14 +9,29 @@
 }
 
 .navigation__link {
+  display: block;
+  padding: 22px 10px 24px;
   font-size: 20px;
   line-height: 20px;
   color: inherit;
+  text-align: center;
   text-decoration: none;
   text-transform: uppercase;
+  border-top: 1px solid #e6e6e6;
 }
 
-.navigation_toggle {
+.navigation__link:hover {
+  opacity: 0.6;
+}
+
+.navigation__link:active {
+  opacity: 0.3;
+}
+
+.navigation__toggle {
+  position: absolute;
+  top: 20px;
+  right: 20px;
   width: 24px;
   height: 24px;
   background-color: #ffffff;
@@ -23,36 +42,85 @@
   cursor: pointer;
 }
 
-.navigation_toggle--close {
-  background-image: url("../../icons/stack.svg#menu-close");
+.navigation__toggle:hover {
+  opacity: 0.8;
+}
+
+.navigation__toggle:active {
+  opacity: 0.6;
+}
+
+@media (max-width: $mobile-width) {
+  .navigation__item {
+    display: none;
+  }
+
+  .navigation--open .navigation__item {
+    display: block;
+  }
+
+  .navigation--open .navigation__toggle {
+    background-image: url("../../icons/stack.svg#menu-close");
+  }
 }
 
 @media (min-width: $tablet-width) {
   .navigation__list {
     display: flex;
+    flex-wrap: wrap;
     min-width: 436px;
     margin-left: auto;
   }
 
-  .navigation__link {
-    font-size: 18px;
-    line-height: 24px;
+  .navigation__item--current {
+    position: relative;
   }
 
-  .navigation_toggle {
+  .navigation__item--current::before {
+    content: "";
+    position: absolute;
+    display: block;
+    bottom: -10px;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background-color: $bg-primary-color;
+  }
+
+
+  .navigation__link {
+    padding: 0;
+    font-size: 18px;
+    line-height: 24px;
+    border-top: 0 solid #e6e6e6;
+  }
+
+  .navigation__item:not(:last-child) {
+    margin-right: 33px;
+  }
+
+  .navigation__toggle {
     display: none;
   }
 }
 
 @media (min-width: $desktop-width) {
   .navigation__list {
-    min-width: 475px;
+    max-width: 550px;
     color: $bg-primary-color-text;
     z-index: 1;
   }
 
   .navigation__list--catalog {
     color: $base-color-text;
+  }
+
+  .navigation__item:not(:last-child) {
+    margin-right: 35px;
+  }
+
+  .navigation__item--current-index::before {
+    background-color: #ffffff;
   }
 
   .navigation__link {

@@ -1,6 +1,38 @@
 .compound {
-  font-family: $primary-font;
+  font-family: $secondary-font;
   font-size: 12px;
   line-height: 16px;
   color: $secondary-color-text;
+}
+
+.compound__item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.compound__definition {
+  margin: 0;
+  padding: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .compound {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .compound__item {
+    position: relative;
+    padding-bottom: 12px;
+  }
+
+  .compound__item::after {
+    content: "";
+    position: absolute;
+    display: block;
+    height: 1px;
+    width: 100%;
+    bottom: 5px;
+    background-color: #cdcdcd;
+  }
 }

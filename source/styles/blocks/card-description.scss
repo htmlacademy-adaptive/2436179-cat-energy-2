@@ -3,3 +3,26 @@
   font-size: 14px;
   line-height: 14px;
 }
+
+.card-description__term {
+  padding: 0;
+}
+
+.card-description__definition {
+  padding: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .card-description {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .card-description__term {
+    padding: 0 8px;
+  }
+
+  .card-description__definition {
+    padding: 0 5px;
+  }
+}

@@ -1,6 +1,7 @@
 .description__wrapper {
-  width: 280px;
-  padding: 0 20px 50px;
+  min-width: 280px;
+  max-width: 675px;
+  padding: 0 20px 48px;
   margin: auto;
 }
 
@@ -19,7 +20,15 @@
   font-weight: inherit;
   font-size: 36px;
   line-height: 40px;
-  text-align: center;
+  text-align: left;
+}
+
+.description__item {
+  min-height: 60px;
+}
+
+.description__item br {
+  display: none;
 }
 
 .description__item:not(:last-child) {
@@ -78,8 +87,10 @@
 
 @media (min-width: $tablet-width) {
   .description__wrapper {
-    width: 633px;
-    padding: 0 105px 10px 30px;
+    min-width: 629px;
+    padding: 0 79px 10px 30px;
+    margin: auto;
+    border-bottom: 1px solid #e6e6e6;
   }
 
   .description__list {
@@ -88,13 +99,13 @@
 
   .description__item {
     position: relative;
-    max-width: 250px;
+    width: 242px;
     min-height: 280px;
     margin-bottom: 37px;
   }
 
   .description__item:nth-child(odd) {
-    margin-right: 133px;
+    margin-right: 144px;
   }
 
   .description__item::before {
@@ -104,17 +115,48 @@
     height: 80px;
   }
 
+  .description__item:not(:last-child) {
+    margin-bottom: 37px;
+  }
+
+  .description__item br {
+    display: block;
+  }
+
+  .description__title {
+    margin-bottom: 32px;
+    font-size: 60px;
+    line-height: 60px;
+  }
+
   .description__subtitle {
-    margin-top: 150px;
+    margin-top: 154px;
     padding-left: 0;
-    padding-right: 20px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .description__number {
+    position: absolute;
+    display: block;
+    font-size: 280px;
+    line-height: 280px;
+    top: 0;
+    right: 5px;
+    color: $bg-secondary-color;
+    z-index: -1;
+  }
+
+  .description__item:not(:first-of-type) .description__number {
+    right: -16px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .description__wrapper {
-    width: 1224px;
+    min-width: 1220px;
     padding: 0 106px 69px 110px;
+    border: none;
   }
 
   .description__list {
@@ -122,12 +164,28 @@
   }
 
   .description__item {
-    max-width: 230px;
+    width: 250px;
     margin-bottom: 0;
   }
 
   .description__item:not(:last-child) {
     margin-bottom: 0;
     margin-right: 0;
+  }
+
+  .description__item::before {
+    top: 43px;
+  }
+
+  .description__subtitle {
+    margin-top: 155px;
+  }
+
+  .description__number {
+    right: 26px;
+  }
+
+  .description__item:not(:first-of-type) .description__number {
+    right: 0;
   }
 }

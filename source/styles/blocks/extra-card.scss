@@ -1,6 +1,6 @@
-
 .extra-card__title {
   margin: 0;
+  margin-bottom: 13px;
   padding: 0;
   font-weight: inherit;
   font-size: 16px;
@@ -9,18 +9,55 @@
   text-transform: uppercase;
 }
 
+.extra-card__description {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  margin-bottom: 15px;
+  padding: 0;
+}
+
 .extra-card__button {
+  display: block;
   padding: 10px 109px;
 }
 
 
 @media (min-width: $tablet-width) {
+  .extra-card__content {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .extra-card__title {
+    margin-bottom: 25px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .extra-card__description {
+    margin: 0;
+  }
+
   .extra-card__button {
     padding: 10px 285px;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .extra-card__content {
+    width: 614px;
+  }
+
+  .extra-card__title {
+    margin: 0;
+  }
+
+  .extra-card__description {
+    margin-top: 5px;
+    width: 297px;
+  }
+
   .extra-card__button {
     padding: 10px 91px;
   }

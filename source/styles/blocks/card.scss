@@ -1,30 +1,110 @@
 .card__content {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
+  margin-bottom: 22px;
+}
+
+.card__link {
+  display: flex;
+  justify-content: center;
+  min-width: 140px;
+}
+
+.card__text {
+  min-width: 140px;
 }
 
 .card__title {
+  margin: 0;
+  margin-bottom: 14px;
+  padding: 0;
+  padding-right: 56px;
   font-weight: inherit;
+  font-size: 16px;
   line-height: 20px;
   color: #222222;
   text-transform: uppercase;
 }
 
+.card__text--more .card__title {
+  padding: 52px 38px 0;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
 .card__subtitle {
-  font-family: $primary-font;
+  margin: 0;
+  margin-bottom: 21px;
+  padding: 0;
+  font-family: $secondary-font;
   font-size: 12px;
   line-height: 16px;
   color: $secondary-color-text;
+  text-align: center;
+}
+
+.card__descriptions {
+  margin: 0;
+  padding: 0;
 }
 
 .card__button {
+  display: block;
   padding: 10px 109px;
 }
 
 @media (min-width: $tablet-width) {
   .card__content {
+    position: relative;
     flex-direction: column;
+    margin-bottom: 26px;
+  }
+
+  .card__content::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 324px;
+    height: 430px;
+    top: 80px;
+    background-color: #f2f2f2;
+    z-index: -1;
+  }
+
+  .card__link {
+    padding-top: 10px;
+    margin-bottom: 22px;
+    width: 200px;
+    height: 210px;
+  }
+
+  .card__link picture {
+    margin: auto;
+  }
+
+  .card__text {
+    width: 250px;
+  }
+
+  .card__title {
+    margin-bottom: 19px;
+    padding: 0 55px;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+  }
+
+  .card__text--more .card__title {
+    padding: 110px 37px 0;
+    margin-bottom: 23px;
+  }
+
+  .card__subtitle {
+    padding: 0 15px;
+    margin-bottom: 81px;
+    font-size: 16px;
+    line-height: 18px;
   }
 
   .card__button {
@@ -32,7 +112,38 @@
   }
 }
 
-@media (min-width: $tablet-width) {
+@media (min-width: $desktop-width) {
+  .card__content {
+    margin-bottom: 32px;
+  }
+
+  .card__content::before {
+    width: 245px;
+  }
+
+  .card__link {
+    margin-bottom: 12px;
+  }
+
+  .card__text {
+    width: 169px;
+  }
+
+  .card__title {
+    margin-bottom: 23px;
+    padding: 0 14px;
+  }
+
+  .card__text--more .card__title {
+    padding: 148px 10px 0;
+    margin-bottom: 26px;
+  }
+
+  .card__subtitle {
+    padding: 0;
+    margin-bottom: 89px;
+  }
+
   .card__button {
     padding: 10px 53px;
   }

@@ -39,11 +39,12 @@
 
 @media (min-width: $desktop-width) {
   .map__wrapper {
-    width: $desktop-width;
+    min-width: $desktop-width;
     height: 400px;
   }
 
   .map__wrapper img {
     top: 0;
+    width: 100%;
   }
 }

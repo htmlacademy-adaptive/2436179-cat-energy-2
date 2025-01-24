@@ -7,6 +7,10 @@
   min-width: 280px;
 }
 
+.coop-dealer__wrapper--catalog {
+  background-color: $bg-secondary-color;
+}
+
 .coop-dealer__title {
   margin: 0;
   margin-right: 17px;
@@ -20,7 +24,8 @@
 
 @media (min-width: $tablet-width) {
   .coop-dealer__wrapper {
-    width: 628px;
+    min-width: 628px;
+    max-width: 1080px;
     padding: 60px 70px;
     justify-content: space-between;
   }
@@ -44,12 +49,16 @@
 
   .coop-dealer__wrapper {
     position: absolute;
-    width: 407px;
-    padding: 60px 80px;
-    top: 95px;
+    min-width: 407px;
+    padding: 56px 80px;
+    top: 100px;
     left: 110px;
     background-color: #ffffff;
     z-index: 1;
+  }
+
+  .coop-dealer__title {
+    margin-right: 87px;
   }
 
   .coop-dealer__address {

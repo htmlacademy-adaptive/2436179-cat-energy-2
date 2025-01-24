@@ -99,6 +99,7 @@
 
 .programs__link {
   position: relative;
+  padding-right: 48px;
   font-size: 16px;
   line-height: 16px;
   color: inherit;
@@ -111,18 +112,18 @@
   position: absolute;
   display: block;
   width: 32px;
-  height: 10px;
+  height: 12px;
   top: 6px;
-  left: 102px;
+  right: 0;
   background-color: #000000;
   mask-image: url("../../icons/stack.svg#arrow-icon");
   mask-repeat: no-repeat;
-  mask-position: center;
-  mask-size: 32px 10px;
+  mask-position: right 0 top 0;
+  transition: mask-position 0.5s;
 }
 
-.programs__item--pro .programs__link::before {
-  left: 98px;
+.programs__link:hover::before {
+  mask-position: right -8px top 0;
 }
 
 .programs__link:active {
@@ -132,6 +133,7 @@
 @media (min-width: $tablet-width) {
   .programs__wrapper {
     min-width: 708px;
+    max-width: 1080px;
     padding: 0 30px 45px;
   }
 
@@ -147,14 +149,16 @@
     width: 200px;
     height: 200px;
     top: 92px;
-    left: 445px;
+    left: auto;
+    right: 63px;
   }
 
   .programs__item--slim::after {
     width: 140px;
     height: 194px;
     top: 81px;
-    left: 475px;
+    left: auto;
+    right: 93px;
     background-size: 140px 194px;
   }
 
@@ -162,7 +166,8 @@
     width: 268px;
     height: 112px;
     top: 137px;
-    left: 410px;
+    left: auto;
+    right: 29px;
     background-size: 268px 112px;
   }
 
@@ -205,7 +210,7 @@
 
 @media (min-width: $desktop-width) {
   .programs__wrapper {
-    min-width: 1220px;
+    min-width: 1440px;
     padding: 82px 110px 71px;
   }
 

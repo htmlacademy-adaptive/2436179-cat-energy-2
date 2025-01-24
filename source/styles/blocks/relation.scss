@@ -1,34 +1,45 @@
 .relation__title {
-  margin-bottom: 8px;
+  padding: 15px 5px 8px;
   font-size: 24px;
   line-height: 24px;
   text-align: center;
 }
 
 .relation__subtitle {
+  width: 77px;
   margin: 0;
+  padding: 0 10px;
   font-family: $secondary-font;
   font-size: 12px;
   line-height: 12px;
   color: $secondary-color-text;
   text-align: center;
+  background-color: #eaeaea;
+  box-shadow: 5px 0 0 0 #eaeaea, -7px 0 0 0 #eaeaea;
+  z-index: 1;
 }
 
 @media (min-width: $tablet-width) {
   .relation__title {
-    margin-bottom: 11px;
+    padding-bottom: 11px;
     font-size: 30px;
     line-height: 37px;
   }
 
   .relation__subtitle {
+    padding: 0;
+    width: 125px;
     font-size: 14px;
     line-height: 14px;
+    background-color: #ffffff;
+    box-shadow: 5px 0 0 0 #ffffff, -7px 0 0 0 #ffffff;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .relation__title {
-    margin-bottom: 9px;
+  .relation__subtitle {
+    background-color: #eaeaea;
+    box-shadow: 5px 0 0 0 #eaeaea, -7px 0 0 0 #eaeaea;
   }
 }
+

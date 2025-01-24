@@ -8,9 +8,11 @@
   align-items: center;
   gap: 40px;
   min-width: 240px;
+  max-width: 320px;
   padding: 40px 20px;
   margin: auto;
 }
+
 
 .main-footer__wrapper > * {
   position: relative;
@@ -55,7 +57,7 @@
 
 @media (min-width: $desktop-width) {
   .main-footer__wrapper {
-    min-width: 1220px;
-    padding: 71px 110px;
+    min-width: 1440px;
+    padding: 74px 110px;
   }
 }

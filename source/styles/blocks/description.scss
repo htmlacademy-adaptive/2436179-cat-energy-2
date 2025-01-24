@@ -88,6 +88,7 @@
 @media (min-width: $tablet-width) {
   .description__wrapper {
     min-width: 629px;
+    max-width: 790px;
     padding: 0 79px 10px 30px;
     margin: auto;
     border-bottom: 1px solid #e6e6e6;
@@ -142,20 +143,20 @@
     font-size: 280px;
     line-height: 280px;
     top: 0;
-    right: 5px;
+    right: 15px;
     color: $bg-secondary-color;
     z-index: -1;
   }
 
   .description__item:not(:first-of-type) .description__number {
-    right: -16px;
+    right: -5px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .description__wrapper {
-    min-width: 1220px;
-    padding: 0 106px 69px 110px;
+    min-width: 1440px;
+    padding: 0 106px 71px 110px;
     border: none;
   }
 

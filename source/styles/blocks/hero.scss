@@ -27,6 +27,11 @@
   background-image: url("../../images/background-image-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: center;
+  background-size: 320px 302px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../images/background-image-mobile@2x.jpg");
+  }
 }
 
 .hero__headline::before {
@@ -142,6 +147,11 @@
     background-image: url("../../images/background-image-desktop@1x.jpg");
     background-repeat: no-repeat;
     background-position: left;
+    background-size: 1040px 694px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../images/background-image-desktop@2x.jpg");
+    }
   }
 
   .hero__wrapper {

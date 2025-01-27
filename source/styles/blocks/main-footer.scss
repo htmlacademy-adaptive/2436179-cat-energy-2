@@ -45,9 +45,10 @@
   .main-footer__wrapper {
     flex-direction: row;
     justify-content: space-between;
+    align-items: flex-start;
     min-width: 708px;
     max-width: 1080px;
-    padding: 62px 30px;
+    padding: 64px 30px;
   }
 
   .main-footer__wrapper > *:not(:last-child)::before {

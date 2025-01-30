@@ -1,1 +1,1 @@
-var n=document.querySelector(".navigation"),e=document.querySelector(".navigation__toggle");e.addEventListener("click",()=>{n.classList.toggle("navigation--open")});
+var n=document.querySelector(".navigation"),e=document.querySelector(".navigation__toggle");n.classList.remove("navigation--nojs");e.addEventListener("click",()=>{n.classList.toggle("navigation--open")});

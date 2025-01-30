@@ -160,6 +160,7 @@
 
 @media (min-width: $desktop-width) {
   .example::after {
+    height: calc(100% - 137px);
     bottom: 0;
   }
 

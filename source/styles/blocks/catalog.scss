@@ -1,0 +1,120 @@
+.catalog__wrapper {
+  min-width: 320px;
+  padding: 27px 0 25px;
+  margin: auto;
+}
+
+.catalog__title {
+  margin: 0;
+  margin-bottom: 41px;
+  padding: 0 40px 0 20px;
+  font-weight: inherit;
+  font-size: 36px;
+  line-height: 36px;
+  text-align: center;
+}
+
+.catalog__list {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.catalog__item {
+  margin: 0;
+  padding: 18px 20px 25px;
+  border-top: 1px solid #ebebeb;
+  border-bottom: 1px solid #ebebeb;
+}
+
+.catalog__item--more {
+  position: relative;
+  padding: 25px 20px 24px;
+}
+
+.catalog__item--more::before,
+.catalog__item--more::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 30px;
+  height: 2px;
+  top: 37px;
+  left: 46%;
+  background-color: #d3d3d3;
+}
+
+.catalog__item--more::after {
+  transform: rotate(90deg);
+}
+
+@media (min-width: $tablet-width) {
+  .catalog__wrapper {
+    min-width: 708px;
+    padding: 65px 30px 74px;
+    margin: auto;
+  }
+
+  .catalog__title {
+    padding: 0;
+    margin-bottom: 84px;
+    font-size: 60px;
+    line-height: 60px;
+    text-align: left;
+  }
+
+  .catalog__list {
+    justify-content: center;
+    flex-flow: row wrap;
+    gap: 60px;
+  }
+
+  .catalog__item {
+    max-width: 324px;
+    padding: 0 37px 40px;
+    border: none;
+  }
+
+  .catalog__item--more {
+    margin-top: 82px;
+    padding: 50px 37px 40px;
+    border: 1px solid $bg-secondary-color;
+  }
+
+  .catalog__item--more::before,
+  .catalog__item--more::after {
+    width: 60px;
+    top: 79px;
+    left: 41%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog__wrapper {
+    width: 1440px;
+    padding: 74px 110px 8px;
+  }
+
+  .catalog__list {
+    justify-content: start;
+    gap: 0;
+  }
+
+  .catalog__item {
+    max-width: 245px;
+    margin-bottom: 63px;
+    padding: 0 38px 40px;
+  }
+
+  .catalog__item:not(:nth-child(4n)) {
+    margin-right: 80px;
+  }
+
+  .catalog__item--more::before,
+  .catalog__item--more::after {
+    top: 78px;
+    left: 38%;
+  }
+}

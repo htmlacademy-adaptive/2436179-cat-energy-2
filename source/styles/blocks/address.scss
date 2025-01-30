@@ -1,0 +1,20 @@
+.address__street {
+  margin: 0;
+  padding: 0;
+  font-family: $secondary-font;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 20px;
+  color: $secondary-color-text;
+}
+
+@media (min-width: $tablet-width) {
+  .address__street {
+    font-size: 16px;
+  }
+
+  .address__street span {
+    display: block;
+    margin-top: 20px;
+  }
+}

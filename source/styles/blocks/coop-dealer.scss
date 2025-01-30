@@ -1,0 +1,66 @@
+.coop-dealer__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  padding: 26px 20px;
+  min-width: 280px;
+}
+
+.coop-dealer__wrapper--catalog {
+  background-color: $bg-secondary-color;
+}
+
+.coop-dealer__title {
+  margin: 0;
+  margin-right: 17px;
+  padding: 0;
+  font-weight: inherit;
+  font-size: 16px;
+  line-height: 20px;
+  color: #111111;
+  text-transform: uppercase;
+}
+
+@media (min-width: $tablet-width) {
+  .coop-dealer__wrapper {
+    min-width: 628px;
+    max-width: 1080px;
+    padding: 60px 70px;
+    justify-content: space-between;
+  }
+
+  .coop-dealer__title {
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  .coop-dealer__address {
+    text-align: right;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .coop-dealer {
+    position: relative;
+  }
+
+  .coop-dealer__wrapper {
+    position: absolute;
+    min-width: 407px;
+    padding: 56px 80px;
+    top: 100px;
+    left: 110px;
+    background-color: #ffffff;
+    z-index: 1;
+  }
+
+  .coop-dealer__title {
+    margin-right: 87px;
+  }
+
+  .coop-dealer__address {
+    width: 157px;
+    text-align: left;
+  }
+}
